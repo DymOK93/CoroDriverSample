@@ -2,15 +2,9 @@
 
 #include <string.hpp>
 
-#include <fmt/compile.h>
 #include <fmt/xchar.h>
 
 using namespace ktl;
-
-template <class ConcreteContext>
-struct Context {
-  static constexpr size_t SIZE = sizeof(ConcreteContext);
-};
 
 EXTERN_C NTSTATUS DriverEntry([[maybe_unused]] PDRIVER_OBJECT DriverObject,
                               [[maybe_unused]] PUNICODE_STRING RegistryPath) {
